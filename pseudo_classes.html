@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        PSEUDO_CLASSES
+    </title>
+    <meta charset="utf-8">
+    <style>
+        .box {
+            width: 100%;
+            height: 100px;
+            background: rgb(228, 103, 211);
+        }
+        
+        ul {
+            font-size: 20px;
+            font-style: italic;
+        }
+        
+        h1 {
+            color: black;
+            font-size: 30px;
+        }
+        /* using HOVER, if we use the internal implement, this class is not effect*/
+        
+        .box:hover {
+            background: rgb(40, 204, 216);
+        }
+        
+        h1:active {
+            color: red;
+        }
+        
+        li:first-child {
+            color: red;
+        }
+        
+        li:last-child {
+            color: green;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div>
+        <h1>CSS PSEUDO_CLASSES</h1>
+        <ul>
+            <li>:root</li>
+            <li>:hover</li>
+            <li>:active</li>
+            <li>:first-child</li>
+            <li>:last-child</li>
+        </ul>
+    </div>
+</body>
+
+</html>

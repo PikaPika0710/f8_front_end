@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>CSS UNITS</title>
+    <meta charset="utf-8" />
+    <!-- Absolute units Px (Pixel)-->
+    <!-- Relative units %, rem, em, vw, vh -->
+
+    <!-- Px: không thay đổi kích thước đối tượng khi thay đổi thành phần chứa nó -->
+
+    <!-- %: thay đổi kích thước đối tượng phụ thuộc vào thành phần chứa nó -->
+
+    <!-- rem: thay đổi kích thước phụ thuộc vào 
+        thẻ html:: nrem = n* (kích thước của thẻ html) -->
+
+    <!-- em: thay đổi kích thước phụ thuộc vào thẻ cha
+        gần nhất:: nem = n* (kích thước của thẻ chứa nó) -->
+
+    <!-- vw: viewport width , vh : viewport height (Phụ thuộc vào kích thước trình duyệt)-->
+
+    <style>
+        .box {
+            height: 50vh;
+            width: 50vw;
+            background-color: green;
+        }
+        
+        html {
+            /* Thường được sử dụng, chỉnh cả kích thước của các thành 
+            phần bên trong bởi việc sử dụng rem */
+            font-size: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <div style="font-size: 50px">
+        <!-- Phụ thuộc vào thẻ html -->
+        <h1 style="color:red; font-size: 2rem">CSS UNITS 1</h1>
+        <!-- Phụ thuộc vào thẻ div -->
+        <h1 style="color:green; font-size: 1em">CSS UNITS 2</h1>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS FUNCTIONS</title>
+    <meta charset="utf-8">
+    <style>
+        .border {
+            margin: 20px;
+        }
+        
+        .box {
+            width: calc(80% + 20%);
+            height: 100px;
+            /* SET MAU RGB KHONG THE NHIN XUYEN QUA DUOC */
+            background: rgb(139, 51, 51);
+        }
+        
+        .box::after {
+            content: attr(data-title);
+        }
+        
+        a::after {
+            content: "(" attr(href) ")";
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box" data-title="Đây là box"> </div>
+
+    <a href="https://www.facebook.com/pikapika0710">Facebook: </a>
+
+    <div>
+
+        <h1>CSS FUNTIONS</h1>
+        <ul>
+            <h2>var()</h2>
+            <h2>linear-gradient()</h2>
+            <h2>rgba()</h2>
+            <h2>rgb()</h2>
+            <h2>calc()</h2>
+            <h2>attr()</h2>
+        </ul>
+
+    </div>
+</body>
+
+</html>

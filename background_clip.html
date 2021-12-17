@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BACKGROUND CLIP</title>
+    <meta charset="utf-8">
+    <style>
+        html,
+        body {
+            /* không chừa lề*/
+            margin: 0;
+        }
+        
+        .header {
+            width: 100%;
+            height: 100px;
+            background-color: #333;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 10px brown dashed;
+            /* background-clip: border-box; => Đổ background luôn phần border*/
+            /* background-clip: padding-box; => Đổ background từ phần padding trở vào */
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"> </div>
+</body>
+
+</html>

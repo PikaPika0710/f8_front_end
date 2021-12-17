@@ -1,0 +1,75 @@
+/* h1 {
+    color: blue;
+    font-size: 30px;
+}
+
+#first-heading {
+    color: red;
+    font-size: 50px;
+}
+
+.second-heading {
+    color: green;
+    font-size: 30px;
+}
+ */
+
+
+/* Universal selector */
+
+
+/* 
+* {
+    color: red;
+    font-size: 30px;
+} */
+
+
+/* li {
+    color: black;
+} */
+
+html {
+    color: blue;
+}
+
+
+/* important */
+
+ol {
+    color: red !important;
+}
+
+ol {
+    color: green;
+}
+
+
+/* Using Variable in CSS */
+
+
+/* Global Variables */
+
+:root {
+    --text-color: violet;
+    --text-size: 100px;
+}
+
+
+/* h1 {
+    color: var(--text-color);
+} */
+
+h2 {
+    /* Local variables */
+    --mycolor: green;
+    color: var(--mycolor);
+    font-size: var( --text-size);
+}
+
+h3 {
+    --mycolor: red;
+    --fontsize: 50px;
+    color: var(--mycolor);
+    font-size: var(--fontsize);
+}
